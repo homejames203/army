@@ -29,9 +29,7 @@
                             <c:forEach var="result" items="${searchResults}">
                                 <div class="card" data-weight="${result.weight}">
                                     <div class="card-title small">
-                                        <c:if test="${result.form.hasAttribute("Icon")}">
-                                            <span class="fa ${result.form.getAttribute("Icon")}"></span>
-                                        </c:if>
+                                        
                                         <a href="${bundle.kappLocation}/${result.form.slug}">${result.form.name}</a>
                                     </div>
                                     <c:if test="${text.isNotBlank(result.form.description)}">

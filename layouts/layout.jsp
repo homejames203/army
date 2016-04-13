@@ -16,6 +16,7 @@
         <link href="${bundle.location}/libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <bundle:stylepack>
             <bundle:style src="${bundle.location}/libraries/bootstrap/css/bootstrap.min.css"/>
+            <bundle:style src="${bundle.location}/libraries/jquery-datatables/dataTables.min.css"/>
             <bundle:style src="${bundle.location}/libraries/notifie/jquery.notifie.css"/>
             <bundle:style src="${bundle.location}/css/master.css"/>
         </bundle:stylepack>

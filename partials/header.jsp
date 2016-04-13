@@ -1,5 +1,8 @@
 <%@page pageEncoding="UTF-8" contentType="text/html" trimDirectiveWhitespaces="true"%>
 <%@include file="../bundle/initialization.jspf" %>
+<div class="container">
+<div class="navbar-inner hidden-xs" style="background-size:cover; height:173px; background-image: url('${bundle.location}/images/cioG6_header.png')"></div>
+</div>
 <nav class="navbar navbar-default" id="bundle-header">
     <div class="container">
         <div class="navbar-header">

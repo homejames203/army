@@ -23,7 +23,7 @@ body {
   font-size: 1.4rem;
   line-height: 2rem;
   color: #000000;
-  background-color: #F1F1F1;
+  /*background-color: #F1F1F1;*/
   margin-bottom: 60px;
 }
 
@@ -127,22 +127,6 @@ pre {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *   Forms
  *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 5, scss/_forms.scss */
-input[type='text'], input[type='password'], textarea, select {
-  border-radius: 0.4rem;
-  padding: 0.2rem 0.6rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.4);
-  outline: none;
-}
-/* line 10, scss/_forms.scss */
-input[type='text']:focus, input[type='password']:focus, textarea:focus, select:focus {
-  border-color: #00427e;
-}
-
-/* line 16, scss/_forms.scss */
-input[type='text'], input[type='password'], select {
-  height: 2.6rem;
-}
 
 /* line 21, scss/_forms.scss */
 section.page form {
@@ -151,8 +135,6 @@ section.page form {
   font-weight: 400;
   overflow: hidden;
   background: #ffffff;
-  -webkit-box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.13);
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.13);
   /* Attachment files
    *-------------------------------------- */
 }
@@ -161,14 +143,7 @@ section.page form .form-group.required label:after {
   content: '*';
   color: red;
 }
-/* line 35, scss/_forms.scss */
-section.page form label {
-  /* Make the label a block */
-  color: rgba(0, 0, 0, 0.75);
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
+
 /* line 43, scss/_forms.scss */
 section.page form .radio label:first-child,
 section.page form .checkbox label:first-child {
@@ -270,105 +245,7 @@ section.page form .file-table .file-row:not(:first-child) > span {
   border-top: none;
 }
 
-/* Form Button Styles
- *-------------------------------------- */
-/* line 8, scss/_buttons.scss */
-form button, form input[type='submit'], form input[type='button'], .btn, section.page form button, .btn-primary, .btn-primary-complement, .btn-secondary, .btn-secondary-complement, .btn-tertiary, .btn-tertiary-complement {
-  background-color: #BBC0C2;
-  color: #000000;
-  display: inline-block;
-  padding: 0.2rem 1.2rem;
-  height: 2.6rem;
-  font-weight: 700;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  border-radius: 0.4rem;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 0.1rem solid transparent;
-  -webkit-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-/* line 30, scss/_buttons.scss */
-form button:hover, form input[type='submit']:hover, form input[type='button']:hover, .btn:hover, section.page form button:hover, .btn-primary:hover, .btn-primary-complement:hover, .btn-secondary:hover, .btn-secondary-complement:hover, .btn-tertiary:hover, .btn-tertiary-complement:hover {
-  background-color: #a0a7aa;
-}
-/* line 34, scss/_buttons.scss */
-form button.round, form input[type='submit'].round, form input[type='button'].round, .btn.round, section.page form button.round, .round.btn-primary, .round.btn-primary-complement, .round.btn-secondary, .round.btn-secondary-complement, .round.btn-tertiary, .round.btn-tertiary-complement {
-  height: 5rem;
-  width: 5rem;
-  font-weight: 400;
-  font-size: 3rem;
-  border-radius: 50%;
-  padding: 0;
-}
 
-/* line 44, scss/_buttons.scss */
-.btn-primary {
-  background-color: #00427e;
-  color: #ffffff;
-}
-/* line 50, scss/_buttons.scss */
-.btn-primary:hover {
-  background-color: #005db1;
-}
-
-/* line 55, scss/_buttons.scss */
-.btn-primary-complement {
-  background-color: #ffffff;
-  color: #00427e;
-}
-/* line 61, scss/_buttons.scss */
-.btn-primary-complement:hover {
-  background-color: #e6e6e6;
-}
-
-/* line 66, scss/_buttons.scss */
-.btn-secondary {
-  background-color: #ffb200;
-  color: #000000;
-}
-/* line 72, scss/_buttons.scss */
-.btn-secondary:hover {
-  background-color: #cc8e00;
-}
-
-/* line 77, scss/_buttons.scss */
-.btn-secondary-complement {
-  background-color: #000000;
-  color: #ffb200;
-}
-/* line 83, scss/_buttons.scss */
-.btn-secondary-complement:hover {
-  background-color: #1a1a1a;
-}
-
-/* line 88, scss/_buttons.scss */
-.btn-tertiary {
-  background-color: #7cb5ec;
-  color: #000000;
-}
-/* line 94, scss/_buttons.scss */
-.btn-tertiary:hover {
-  background-color: #4f9ce6;
-}
-
-/* line 99, scss/_buttons.scss */
-.btn-tertiary-complement {
-  background-color: #000000;
-  color: #7cb5ec;
-}
-/* line 105, scss/_buttons.scss */
-.btn-tertiary-complement:hover {
-  background-color: #1a1a1a;
-}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *   Lists
@@ -679,6 +556,9 @@ nav#kapp-sub-nav {
 /* line 7, scss/_navbar.scss */
 .navbar-default .navbar-brand {
   color: #00427e;
+}
+.navbar-default {
+  background-color: #ffffff !important;
 }
 
 /* Navbar Form
