@@ -51,5 +51,8 @@
 
             return submissionComponent.searchByKapp(kapp, searchOptions);
         }
+        public List<Submission> retrieveApplicationSubmissions () {
+            return submissionComponent.searchByForm(kapp.getForm(new String("app-hosting-questionaire") ));
+        }
     }
 %>

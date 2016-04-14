@@ -43,16 +43,22 @@
                                 <i class="fa fa-user fa-fw"></i> ${text.escape(text.trim(identity.displayName, identity.username))} <span class="fa fa-caret-down fa-fw"></span>
                             </a>
                             <ul class="dropdown-menu show-xs priority" aria-labelledby="drop1">
+                                <li class="hidden-xs"><a href="${bundle.kappLocation}/?page=approvals">
+                                    <i class="fa fa-tasks fa-fw"></i> My Tasks</a>
+                                </li>
+                                <li class="divider hidden-xs"></li>
                                 <li class="hidden-xs"><a href="${bundle.spaceLocation}/?page=profile">
                                     <i class="fa fa-pencil fa-fw"></i> Edit Profile</a>
                                 </li>
                                 <li class="priority hidden-lg hidden-md hidden-sm">
                                     <a href="${bundle.spaceLocation}/?page=profile"><i class="fa fa-user fa-fw"></i> Profile</a>
                                 </li>
-                                <li class="divider hidden-xs"></li>
-                                <li class="hidden-xs"><a href="${bundle.spaceLocation}/app/">
-                                    <i class="fa fa-dashboard fa-fw"></i> Management Console</a>
-                                </li>
+                                <c:if test="${identity.spaceAdmin}">
+                                    <li class="divider hidden-xs"></li>
+                                    <li class="hidden-xs"><a href="${bundle.kappLocation}?page=dashboard">
+                                        <i class="fa fa-dashboard fa-fw"></i> Application Dashboard</a>
+                                    </li>
+                                </c:if>
                                 <li class="divider hidden-xs"></li>
                                 <li><a href="${bundle.spaceLocation}/app/logout">
                                     <i class="fa fa-sign-out fa-fw"></i> Logout</a>
